@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>電卓</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 液晶画面部分 -->
+    <input type="text" class="display" name="display" value="" disabled><br>
+           
+    <!-- c,M+,MR,MC -->
+    <input type="button" value="C" class="clear" onclick="get_calc(this)">
+    <input type="button" value="M+" class="operator" onclick="get_calc(this)">
+    <input type="button" value="MR" class="operator" onclick="get_calc(this)">
+    <input type="button" value="MC" class="operator" onclick="get_calc(this)"><br>
+
+    <!-- 7,8,9,÷ -->
+    <input type="button" value="7" onclick="get_calc(this)">
+    <input type="button" value="8" onclick="get_calc(this)">
+    <input type="button" value="9" onclick="get_calc(this)">
+    <input type="button" value="÷" class="operator" onclick="get_calc(this)"><br>
+
+    <!-- 4,5,6,× -->
+    <input type="button" value="4" onclick="get_calc(this)">
+    <input type="button" value="5" onclick="get_calc(this)">
+    <input type="button" value="6" onclick="get_calc(this)">
+    <input type="button" value="×" class="operator" onclick="get_calc(this)"><br>
+
+    <!-- 1,2,3,- -->
+    <input type="button" value="1" onclick="get_calc(this)">
+    <input type="button" value="2" onclick="get_calc(this)">
+    <input type="button" value="3" onclick="get_calc(this)">
+    <input type="button" value="-" class="operator" onclick="get_calc(this)"><br>
+
+    <!-- 0,.,=,+ -->
+    <input type="button" value="0" class="zero" onclick="get_calc(this)">
+    <input type="button" value="." onclick="get_calc(this)">
+    <input type="button" value="=" class="operator" onclick="get_calc(this)">
+    <input type="button" value="+" class="operator" onclick="get_calc(this)"></br>
+
+    <script src ="code.js">
+    </script>
+
+</body>
+</html>
